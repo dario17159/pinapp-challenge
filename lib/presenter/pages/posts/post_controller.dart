@@ -5,6 +5,7 @@ import 'package:pinapp_challenge/domain/entities/post.dart';
 import 'package:pinapp_challenge/domain/repositories/post_repository.dart';
 import 'package:pinapp_challenge/presenter/pages/post_detail/post_detail_binding.dart';
 import 'package:pinapp_challenge/presenter/pages/post_detail/post_detail_page.dart';
+import 'package:pinapp_challenge/utils/app_colors.dart';
 
 class PostController extends GetxController {
   final IPostRepository _postRepository = Get.find<PostRepositoryImpl>();
@@ -26,9 +27,11 @@ class PostController extends GetxController {
     } catch (e) {
       gettingData.value = false;
       Get.snackbar(
-        'Atencion',
+        'Atención',
         'No se pudo obtener los posts',
         margin: const EdgeInsets.all(16),
+        backgroundColor: AppColors.redColor,
+        colorText: Colors.white,
       );
     }
   }
