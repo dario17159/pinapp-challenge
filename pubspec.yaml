@@ -1,0 +1,39 @@
+name: pinapp_challenge
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  dio: ^5.4.3+1
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.4.0
+  flutter_svg: ^2.0.10+1
+  get: ^4.6.6
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/app/splash/splash-screen-alt-icon.png
+  android_12:
+    color: "#FFFFFF"
+    icon_background_color: "#FFFFFF"
+    image: assets/app/splash/splash-screen-icon.png
+  fullscreen: true
+  web: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/png/
+    - assets/images/svg/
